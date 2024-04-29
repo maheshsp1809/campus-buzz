@@ -25,15 +25,14 @@ Campus Buzz is a comprehensive social media platform developed using Next.js and
 - Live streaming
 - Get verified (blue tick)
 
-### Third-Party Libraries
+### Third-Party Libraries or Services
 
 - **Next Auth**: Authentication
-- **Superpine**: Touch-based components
+- **NeonTech**: PostgreSQL db
 - **React-HLS-Player**: Video playback
 - **React-hot-toast**: Toast notifications
 - **Pusher**: Real-time features
 - **UploadThig**: upload images and videos
-- **ReactPlay**: Payments
 
 ### Stack
 
@@ -43,13 +42,13 @@ Campus Buzz is a comprehensive social media platform developed using Next.js and
 - **Prisma**
 - **Neontech POSTGRESQL**
 - **Firebase Cloud Messaging**
-- **BlackBlaze B2 object storage**
+- **Uploadthing object storage**
 
 ## Architecture
 
 The application follows a monorepo architecture and utilizes various technologies for different components:
 
-- **Image/Video Upload**: Media files are uploaded to BlackBlaze B2 object storage, and their URLs are stored in the database.
+- **Image/Video Upload**: Media files are uploaded to Uploadthing object storage, and their URLs are stored in the database.
 - **Real-time Push Notification**: Pusher.js is used for real-time connection, enabling push notifications to clients.
 - **General Functioning**: The server handles all CRUD operations related to posts, feeds, communities, etc., using Prisma and a Neontech POSTGRESQL database.
 
@@ -65,6 +64,10 @@ The project development follows an iterative approach, with Priority 0 features 
 - Post a video
 - Create communities
 - Like/Dislike
+- Save Posts
+- One on One Chat
+- View/Edit your profile
+- Follow people / Get Followers
 
 Other features will be added as the development progresses.
 
