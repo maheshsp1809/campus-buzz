@@ -13,9 +13,9 @@ type FormType = "signin" | "signup";
 
 const SiginForm = ({ formType }: { formType: FormType }) => {
   const [userInput, setUserInput] = useState({
-    name: "",
-    email: "",
-    password: "",
+    name: "Mahesh",
+    email: "mahesh4571@gmail.com",
+    password: "Mahesh4571@",
   });
 
   const router = useRouter();
